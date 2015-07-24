@@ -1,0 +1,5 @@
+---
+- hosts: testserver
+  sudo: yes
+  roles:
+    - copy_mode_test

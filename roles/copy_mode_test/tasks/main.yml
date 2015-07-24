@@ -1,0 +1,37 @@
+---
+- name: copy a file with mode, test 1, bug here
+  copy:
+    src: dummyfile
+    dest: /tmp/dummy1
+    mode: 755
+
+- name: copy a file with mode, test2
+  copy:
+    src: dummyfile
+    dest: /tmp/dummy2
+    mode: 0755
+
+- name: copy a file with mode, test 3
+  copy:
+    src: dummyfile
+    dest: /tmp/dummy3
+    mode: "755"
+
+- name: copy a file with mode, test 4
+  copy:
+    src: dummyfile
+    dest: /tmp/dummy4
+    mode: "0755"
+
+- name: copy a file with mode, test 5
+  copy: src=dummyfile dest=/tmp/dummy5 mode=755
+
+- name: copy a file with mode, test 6
+  copy: src=dummyfile dest=/tmp/dummy6 mode=0755
+
+- name: copy a file with mode, test 7
+  copy: src=dummyfile dest=/tmp/dummy7 mode="755"
+
+- name: copy a file with mode, test 8
+  copy: src=dummyfile dest=/tmp/dummy8 mode="0755"
+
