@@ -30,3 +30,10 @@ drwxr-xr-x 22 root root 4096 Jul 24 18:29 ..
 -rwxr-xr-x  1 root root    4 Jul 24 18:29 dummy7
 -rwxr-xr-x  1 root root    4 Jul 24 18:29 dummy8
 ```
+
+---
+
+## UPDATE
+
+Seems this behaviour is intended (a pitfall IMHO). Details:  
+https://github.com/ansible/ansible-modules-core/issues/1798
